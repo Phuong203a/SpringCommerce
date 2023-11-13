@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Home</title>
+</head>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  img {
+    transition: all 0.5s;
+    border-radius: 5px;
+  }
+
+  img:hover {
+    transform: scale(1.5);
+  }
+  .rounded-3:hover{
+    transform: none
+  }
+
+  .card-img-top_temple:hover {
+    transform: none !important;
+  }
+
+  .color {
+    background-color: #f97e11;
+ padding-left: 5%;
+    padding-right: 5%;
+  }
+  .color_combo{
+    background-color: white;
+  }
+  .color_combo:hover{
+    transform: none !important;
+  }
+
+
+
+  @-webkit-keyframes my {
+    0% {
+      color: #F8CD0A;
+    }
+
+    50% {
+      color: #fff;
+    }
+
+    100% {
+      color: #F8CD0A;
+    }
+  }
+
+  @-moz-keyframes my {
+    0% {
+      color: #F8CD0A;
+    }
+
+    50% {
+      color: #fff;
+    }
+
+    100% {
+      color: #F8CD0A;
+    }
+  }
+
+  @-o-keyframes my {
+    0% {
+      color: rgb(216, 248, 10);
+    }
+
+    50% {
+      color: #fff;
+    }
+
+    100% {
+      color: #f6c900;
+    }
+  }
+
+  @keyframes my {
+    0% {
+      color: rgb(17, 30, 96);
+    }
+
+    50% {
+      color: rgb(252, 252, 252);
+    }
+
+    100% {
+      color: #ff0000;
+    }
+  }
+
+  .sale {
+    margin: 50px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-family: bold;
+    font-size: 50px;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite;
+    -o-animation: my 700ms infinite;
+    animation: my 700ms infinite;
+  }
+
+  .sale:hover {
+    color: rgb(250, 4, 4) !important;
+    transform: scale(1.5);
+  }
+
+  .price_text-muted {
+    color: #fa7500;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: bold;
+  }
+
+  .btnAdd {
+    background-color: rgb(255, 98, 0);
+    font-size: 17px;
+    border-radius: 10px;
+  }
+
+  * {
+    font-family: bold;
+  }
+
+  .footer {
+    background-color: #f97e11;
+    color: white;
+    padding: 5%;
+    font-size: 20px;
+  }
+
+  .footerBeauty {
+    font-size: 25px;
+  }
+
+  .card_video {
+    margin: 2em auto;
+    padding: 30px;
+  }
+
+
+</style>
+<body>
+<nav class="navbar navbar-expand-sm"
+     style="height: 100px;font-size: 20px; font-family: Bold; text-align: center;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">BEAUTY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./home">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">GIỚI THIỆU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">SẢN PHẨM</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">SALE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">BLOG</a>
+                </li>
+            </ul>
+            <div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" style="height: 50px; width:300px;"
+                           placeholder="Search">
+                    <button class="btnAdd btn btn-danger me-5">Search</button>
+                    <a href="./cart"><img class="card-img-top me-3 addcart " src="/img/add-to-cart.png"
+                                               style="width:47px;"
+                                               alt="Card image cap"></a>
+                    <a href="./Login.html"><img class="card-img-top me-4 add" src="/img/add.png" style="width:47px;"
+                                                alt="Card image cap"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="card-group ">
+    <div class="card" style="background-color:#fdd9b3;">
+        <div class="card-body">
+            <p style="margin:25% 0px 70px;height: 0px; text-align: center;font-size: 40px; font-family: Bold;">VỪA RA
+                MẮT
+            </p>
+            <h1
+                    style="margin:10px; height: 15px;text-align: center; font-weight: bold; font-size: 50px; font-family: Bold;">
+                BỘ ĐÔI CHỐNG LÃO HÓA</h1>
+            <p style="margin:7%;font-size: 25px; font-family:bold">Với thành phần chiết xuất từ hạt xương rồng hữu cơ và
+                chứa chất Aquacacteen giúp
+                làm dịu da bị dị ứng cùng đặc tính dưỡng ẩm tuyệt vời do chưa hàm lượng cao các hợp chất giữ nước</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top_temple" src="/img/bộ đôi chống lão hóa.jpg" alt="Card image cap">
+    </div>
+</div>
+<div class="container">
+    <a href="./controller/getAllProduct">
+        <div class="card text-center me-5" style="border: none;">
+            <div class="card-header" style="background-color: white;">
+                <img src="/img/coll_1.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Dưỡng ẩm</h3>
+            </div>
+        </div>
+    </a>
+    <a href="./KemChongNang.html">
+        <div class="card text-center me-5" style="border: none;">
+            <div class="card-header" style="background-color: white;">
+                <img src="/img/coll_2.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Kem chống nắng</h3>
+            </div>
+        </div>
+    </a>
+    <a href="./TayTeBaoChet.html">
+        <div class="card text-center me-5" style="border: none;">
+            <div class="card-header" style="background-color: white;">
+                <img src="/img/coll_3.jpg" alt="">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Tẩy tế bào chết</h3>
+            </div>
+        </div>
+    </a>
+    <a href="./MatNa.html"></a>
+    <div class="card text-center me-5" style="border: none;">
+        <div class="card-header" style="background-color: white;">
+            <img src="/img/coll_4.jpg" alt="">
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Mặt nạ</h3>
+        </div>
+    </div>
+    </a>
+</div>
+<div class="color">
+    <h1 class="sale"> GIẢM NGAY 50% KHI MUA CHỈ TỪ 500K</h1>
+            <div th:each="group : ${productGroups}" class="row row-cols-1 row-cols-md-3 g-4">
+                <div th:each="product : ${group}" class="card h-100">
+                    <img src="/img/ninacinamine.jpg" style="height:400px;" class="card-img-top" alt="Skyscrapers"/>
+                    <div class="card-body">
+                        <h5 th:text="${product.name}" class="card-title">
+                        </h5>
+                        <p class="card-text">
+                            Kem dưỡng ẩm sâu chiết xuất từ xương rồng Huxley</p>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p th:text="${product.price}" class="price_text-muted"></p>
+                    </div>
+
+                    <form th:action="@{/adjustCart}" role="form" method="post">
+                        <input type="number" name="productId" th:value="${product.id}" style="display: none;"/>
+                        <input type="number" name="action" th:value="1" style="display: none;"/>
+                        <div><br>
+                            <button type="submit" class="btnAdd btn btn-danger add-to-cart">Thêm giỏ</button>
+                        </div>
+                    </form>
+
+                </div>
+        </div>
+</div>
+</div>
+<div class="card_video container ">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="card">
+                <iframe width="1000" height="415" src="https://www.youtube.com/embed/CP3aSbRq8c4?si=ymC-_GDF8zFS5nWB"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #fa7500; ">
+    <div class="color_combo" style="background-color: #fa7500;">
+        <h1 style=" text-align: center; margin: 20px; padding: 20px; color: white;">COMBO SIÊU TIẾT KIỆM</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img class="color_combo" src="/img/1-1.jpeg" style="height:400px;"
+                         alt="Skyscrapers"/>
+                    <div class="card-footer">
+                        <p class="price_text-muted" style="text-align: center;">2,000,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="color_combo" src="/img/e.jpg"
+                         style="height:400px;" alt="Los Angeles Skyscrapers"/>
+                    <div class="card-footer">
+                        <p class="price_text-muted" style="text-align: center;">2,000,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="color_combo" src="/img/c.jpg" style="height:400px;"
+                         alt="Los Angeles Skyscrapers"/>
+                    <div class="card-footer">
+                        <p class="price_text-muted" style="text-align: center;">2,000,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 20px;background-color: white; ">
+        <div class="card-group ">
+            <div class="card" style="border: none;">
+                <div class="card-body">
+                    <h1 style="margin:20% 0px 70px;height: 0px; text-align: center;font-size: 40px; font-family: Bold;">
+                        VỀ CHÚNG TÔI
+                    </h1>
+                    <p style="margin:7%;font-size: 25px; font-family:bold">Beauty đã bắt đầu sản xuất các sản phẩm chăm
+                        sóc sắc đẹp từ các thành phần thiên nhiên vào năm 1960. Hiện nay, chúng tôi tiếp tục cung cấp
+                        nhiều sản phẩm chăm sóc và làm đẹp độc đáo, đáp ứng nhu cầu của từng cá nhân, và trở thành một
+                        trong những thương hiệu hàng đầu trong ngành mỹ phẩm</p>
+                </div>
+            </div>
+            <img class="rounded-3" style=" width: 900px;"
+                 src="https://1.bp.blogspot.com/-RYwFTIY8lFQ/W09eUi6C6OI/AAAAAAAAHuw/Hgml27Nq2rEkn7zxbRpdLAhFEWQe0Gf6gCLcBGAs/s1600/Huxley_Banner_23385e0c-3b52-4f27-9517-73f4acc0cce6_2048x.jpg"
+                 alt="Card image cap">
+        </div>
+    </div>
+</div>
+</div>
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Links  -->
+    <section class=" footer">
+        <div class=" text-left text-md-start mt-4">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class=" footerBeauty text-uppercase fw-bold mb-4">
+                        <i class="  fas fa-gem me-3"></i>BEAUTY
+                    </h6>
+                    <p>
+                        Số 19 Nguyễn Hữu Thọ, P. Tân Phong, Q. 7, Tp. Hồ Chí Minh.
+                    </p>
+                    <p>
+                        Số điện thoại: 19006750
+                    </p>
+                    <p>
+                        Email:support@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="footerBeauty text-uppercase fw-bold mb-4">
+                        Hỗ trợ
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Tìm kiếm</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Giới thiệu</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Liên hệ</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Kiểm tra đơn hàng</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Hệ thống cửa hàng</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class=" footerBeauty text-uppercase fw-bold mb-4">
+                        Chính sách
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Chính sách vận hành</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Chính sách bảo mật</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Chính sách đổi trả</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Phương thức thanh toán</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Câu hỏi thường gặp</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class=" footerBeauty text-uppercase fw-bold mb-4">Tổng đài hỗ trợ</h6>
+                    <p><i class="fas fa-home me-3"></i> Mua hàng online:18808080 (8h-20h)</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        Tdtu@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i>Gớp ý và khiếu nại: 18009191 </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://huxleyvn.com/">Beauty.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+
+</html>
